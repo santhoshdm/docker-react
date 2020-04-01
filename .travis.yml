@@ -7,7 +7,7 @@ before_install:
 
 script:
   - docker run -e CI=true dmsanthosh/docker-react npm run test -- --coverage
-
+#Deploy onto AWS Beanstalk
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
